@@ -5,17 +5,11 @@ FROM $BUILD_FROM
 RUN apk add --no-cache \
     python3 \
     py3-pip \
-    python3-dev \
-    build-base \
-    linux-headers \
     libgpiod \
-    libgpiod-dev \
     py3-libgpiod
 
 # Копируем ваш бинарник
 COPY main_CM5 /usr/local/bin/main_CM5
-
-# Даём права на выполнение
 RUN chmod +x /usr/local/bin/main_CM5
 
 # Копируем скрипт запуска
