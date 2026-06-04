@@ -2,7 +2,7 @@
 
 set -e
 
-echo "=== PWM Cooler Control Add-on starting ==="
+echo "=== PWM cooling Control add-on starting ==="
 
 # Ждём, пока система полностью загрузится
 sleep 5
