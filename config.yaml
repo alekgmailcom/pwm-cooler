@@ -1,0 +1,22 @@
+name: "PWM cooling Control"
+version: "1.0.0"
+slug: "pwm_cool"
+description: "Управление многоканальным ШИМ через GPIO на Waveshare шилде"
+arch:
+  - armv7
+  - aarch64
+startup: "system"
+boot: "auto"
+host_network: true
+privileged:
+  - SYS_RAWIO
+  - SYS_ADMIN
+devices:
+  - /dev/mem:/dev/mem:rw
+  - /dev/gpiomem:/dev/gpiomem:rw
+  - /sys/class/gpio:/sys/class/gpio:rw
+options: {}
+schema: {}
+map:
+  - config:rw
+stdin: true
