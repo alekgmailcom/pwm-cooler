@@ -12,9 +12,9 @@ privileged:
   - SYS_RAWIO
   - SYS_ADMIN
 devices:
-  - /dev/mem:/dev/mem:rw
-  - /dev/gpiomem:/dev/gpiomem:rw
-  - /sys/class/gpio:/sys/class/gpio:rw
+  - /dev/mem
+  - /dev/gpiomem
+  - /sys/class/gpio
 options: {}
 schema: {}
 map:
