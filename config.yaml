@@ -1,5 +1,5 @@
 name: "PWM cooling Control"
-version: "1.0.1"
+version: "1.0.2"
 slug: "pwm_cool"
 description: "Управление многоканальным ШИМ через GPIO на Waveshare шилде"
 arch:
