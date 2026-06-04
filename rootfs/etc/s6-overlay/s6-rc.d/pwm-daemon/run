@@ -1,0 +1,6 @@
+#!/command/with-contenv bashio
+
+echo "Starting PWM daemon service..."
+
+# Запускаем вашу основную программу
+exec /usr/local/bin/main_CM5
